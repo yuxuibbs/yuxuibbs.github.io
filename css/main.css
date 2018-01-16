@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    background: #ddd;
+}
+
+h1 {
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    line-height: 100vh;
+    font-family: "airstream", Arial, Calibri, sans-serif;
+    font-weight: normal;
+}
