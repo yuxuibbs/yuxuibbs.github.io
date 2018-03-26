@@ -1,4 +1,4 @@
-body {
+/*body {
     margin: 0;
     padding: 0;
 }
@@ -13,4 +13,16 @@ h2 {
 
 .title {
     text-align: center;
+}
+*/
+body {
+    background-color: #c2d5db;
+    color: #131925;
+    /*http://colorpalettes.net/color-palette-2968/*/
+}
+.logo img {
+    height: 4em;
+}
+.current-page {
+    background-color: yellow;
 }
