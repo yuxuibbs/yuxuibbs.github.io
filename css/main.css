@@ -49,11 +49,21 @@ nav ul li {
     display: inline-block;
     /*text-align: center;*/
     box-sizing: border-box;
-    padding: 5px;
+    padding: 1px;
 }
 nav {
     background-color: darkblue;
 }
 header {
-    font-size: 5em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.cubing {
+    background-image: url("../img/rubiks_background.jpg");
+}
+.cubing a {
+    background-color: lightblue;
+    color: black;
 }
