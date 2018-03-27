@@ -15,14 +15,45 @@ h2 {
     text-align: center;
 }
 */
+
+/*html, body, header, footer, nav, div, ul, li, h1, h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}*/
+
+
 body {
     background-color: #c2d5db;
     color: #131925;
     /*http://colorpalettes.net/color-palette-2968/*/
 }
+
 .logo img {
     height: 4em;
 }
 .current-page {
     background-color: yellow;
+}
+iframe {
+    width: 100%;
+}
+.project-list li {
+    display: inline-block;
+    background: antiquewhite;
+    line-height: 200%;
+}
+
+/* Navbar stuff */
+nav ul li {
+    display: inline-block;
+    /*text-align: center;*/
+    box-sizing: border-box;
+    padding: 5px;
+}
+nav {
+    background-color: darkblue;
+}
+header {
+    font-size: 5em;
 }

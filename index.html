@@ -9,11 +9,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="index.html" aria-label="home"><img src="img/logo.jpg" alt="home"></a>
-        </div>
+    <nav class="navbar sticky-top navbar-nav">
         <ul>
+            <li class="logo"><a href="index.html" aria-label="home"><img src="img/logo.jpg" alt="home"></a></li>
             <li><a class="current-page" href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="resume.html">Resume</a></li>
@@ -21,33 +19,44 @@
          </ul> 
     </nav>
 
-    <h1 class="title">Yuxuan's website</h1>
+    <header>Yuxuan's website</header>
 
-    <h2 class="resume">Resume:</h2>
+    <h1 class="resume">Resume</h1>
     <ul>
         <li><a href="resume.pdf">Resume</a></li>
     </ul>
-    <h2 class="projects">Profiles:</h2>
+    <div class="container">
+        <iframe src="files/resume.pdf"></iframe>
+    </div>
+
+    <h1 class="projects">Profiles</h1>
     <ul>
         <li><a href="https://github.com/yuxuibbs">Github</a></li>
         <li><a href="https://www.worldcubeassociation.org/results/p.php?i=2011CHEN54">World Cube Association</a></li>
     </ul>
-    <h2 class="projects">Open Source Projects:</h2>
-    <ul>
-        <li><a href="https://github.com/yuxuibbs/yuxuibbs.github.io">Personal Website</a></li>
-        <li><a href="http://agplayer.herokuapp.com/">Mr. Ling</a></li>
-        <li><a href="https://github.com/yuxuibbs/CubeToaster">CubeToaster</a></li>
-        <li><a href="https://github.com/thewca/worldcubeassociation.org">World Cube Association Website</a></li>
-        <li><a href="https://github.com/yuxuibbs/WCA-Statistics">World Cube Association Database Statistics</a></li>
-    </ul>
-<!--     <h2 class="projects">Class Projects:</h2>
-    <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-    </ul>
- -->
+    
+    <h1 class="projects">Open Source Projects</h1>
+    <div class="project-list">
+        <ul>
+            <li><a href="https://github.com/yuxuibbs/yuxuibbs.github.io">Personal Website</a></li>
+            <li><a href="http://agplayer.herokuapp.com/">LinguiSHTIK solution finder</a></li>
+            <li><a href="https://github.com/yuxuibbs/CubeToaster">CubeToaster</a></li>
+            <li><a href="https://github.com/thewca/worldcubeassociation.org">World Cube Association Website</a></li>
+            <li><a href="https://github.com/yuxuibbs/WCA-Statistics">World Cube Association Database Statistics</a></li>
+            <li><a href="https://github.com/yuxuibbs/ArborHacks2-project">Random Meme Sender</a></li>
+        </ul>
+        <h1 class="projects">Other Projects</h1>
+        <p>These are the projects with code that cannot be shared publicly due to course restrictions (such as the University of Michigan Engineering Honor Code) and data sensitivity concerns. Feel free to <a href="contact.html">contact me</a> for details on these projects.</p>
+        <ul>
+            <li>MLAG registration and scoring program</li>
+            <li>Kidney segmentation program</li>
+            <li>Stenosis detection program</li>
+            <li>Equations tricks finder for Academic Games</li>
+            <li>AI that plays a turn-based dungeon exploration game</li>
+            <li><a href="http://0hh1.com/">0hh1</a> solver</li>
+        </ul>
+    
+    </div>
     <footer class="footer">
         <p>Created by Yuxuan Chen &copy; 2018</p>
     </footer>
