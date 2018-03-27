@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Times;
+    /*font-family: Arial, Times;*/
     background-color: #c2d5db;
     color: #131925;
     /*http://colorpalettes.net/color-palette-2968/*/
@@ -11,17 +11,17 @@ body {
     height: 4em;
 }
 .current-page {
-    background-color: yellow;
+    background-color: green;
 }
 
-.project-list li {
+/*.project-list li {
     display: inline-block;
     background: antiquewhite;
     line-height: 200%;
-}
+}*/
 
 /* Navbar stuff */
-nav ul {
+/*nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -29,25 +29,25 @@ nav ul {
 nav ul li {
     display: inline-block;
     /*text-align: center;*/
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     /*padding: 1px;*/
-    background-color: lightyellow;
-    vertical-align: middle;
-}
+    /*background-color: lightyellow;*/
+    /*vertical-align: middle;*/
+/*}*/
 
-nav ul li a:hover {
+/*nav ul li a:hover {
     color: red;
 }
 
 nav {
     background-color: darkblue;
 }
-
+*/
 header {
     font-size: 2em;
     font-weight: bold;
+    background: blue;
 }
-
 
 .cubing {
     background-image: url("../img/rubiks_background.jpg");
@@ -55,4 +55,40 @@ header {
 .cubing a {
     background-color: lightblue;
     color: black;
+}
+/*img {
+    width: 100px;
+}*/
+h1.title {
+    font-size: .9em;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.nav, .logo {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+.nav {
+    width: 70%;
+    text-align: right;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+.nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+.nav ul li:last-child {
+    margin-right: 10px;
+}
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
 }
