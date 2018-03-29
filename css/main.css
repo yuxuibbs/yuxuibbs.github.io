@@ -8,7 +8,7 @@ body {
 }
 
 .logo img {
-    height: 3em;
+    height: 2.5em;
 }
 .current-page {
     background-color: green;
@@ -44,7 +44,7 @@ nav {
 }
 */
 header {
-    font-size: 2em;
+    font-size: 1em;
     font-weight: bold;
     background: #1e698d;
 /*    position: fixed;
@@ -64,16 +64,15 @@ header {
 }*/
 h1.title {
     margin: 0;
-    margin-bottom: 15px;
     color: #131925;
 }
 .nav, .logo {
     display: inline-block;
-    width: 30%;
+    width: 20%;
     vertical-align: middle;
 }
 .nav {
-    width: 70%;
+    width: 80%;
     text-align: right;
 }
 .nav ul {
