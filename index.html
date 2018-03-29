@@ -5,71 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Yuxuan's website</title>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Nunito" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+
 </head>
 <body>
-    <header>
-        <h1 class="title">Yuxuan's website</h1>
-        <div class="logo"><a href="index.html" aria-label="home"><img src="img/logo.jpg" alt="home"></a></div><!-- 
-         --><nav class="nav">
+    <div class="container">
+        <header>
+            <h1 class="title">Yuxuan's website</h1>
+            <div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="home"></a></div><!-- 
+             --><nav class="nav">
+                <ul>
+                    <li><a class="current-page" href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="cubing.html">Cubing</a></li>
+                </ul>
+            </nav> 
+        </header>
+
+        <h2 class="resume">Resume</h2>
+        <ul>
+            <li><a href="resume.pdf">Resume</a></li>
+        </ul>
+        
+        <img src="img/resume.jpg">
+
+        <h2 class="profiles">Profiles</h2>
+        <ul>
+            <li><a href="https://github.com/yuxuibbs">Github</a></li>
+            <li><a href="https://www.worldcubeassociation.org/results/p.php?i=2011CHEN54">World Cube Association</a></li>
+        </ul>
+        
+        <h2 class="projects">Open Source Projects</h2>
+        <div class="project-list">
             <ul>
-                <li><a class="current-page" href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="cubing.html">Cubing</a></li>
+                <li><a href="https://github.com/yuxuibbs/yuxuibbs.github.io">Personal Website</a></li>
+                <li><a href="http://agplayer.herokuapp.com/">LinguiSHTIK solution finder</a></li>
+                <li><a href="https://github.com/yuxuibbs/CubeToaster">CubeToaster</a></li>
+                <li><a href="https://github.com/thewca/worldcubeassociation.org">World Cube Association Website</a></li>
+                <li><a href="https://github.com/yuxuibbs/WCA-Statistics">World Cube Association Database Statistics</a></li>
+                <li><a href="https://github.com/yuxuibbs/ArborHacks2-project">Random Meme Sender</a></li>
             </ul>
-        </nav> 
-    </header>
+            <h2 class="projects">Other Projects</h2>
+            <p>These are the projects with code that cannot be shared publicly due to course restrictions (such as the University of Michigan Engineering Honor Code) and data sensitivity concerns.</p>
+            <ul>
+                <li>MLAG registration and scoring program</li>
+                <li>Kidney segmentation program</li>
+                <li>Stenosis detection program</li>
+                <li>Equations tricks finder for Academic Games</li>
+                <li>AI that plays a turn-based dungeon exploration game</li>
+                <li><a href="http://0hh2.com/">0hh1</a> solver</li>
+            </ul>
+        </div>
+        
+        <h2>CubeToaster</h2>
+        <a class="cubetoaster" href="https://github.com/yuxuibbs/CubeToaster"><img src="img/cubetoaster.png"></a>
 
-    <h1 class="resume">Resume</h1>
-    <ul>
-        <li><a href="resume.pdf">Resume</a></li>
-    </ul>
-    <object class="embed-responsive-item" data="files/resume.pdf" type="application/pdf" height="100" width="100"></object>
+        <h2>Mains</h2>
+        <p>These are the mains I use for every WCA event that I compete in.</p>
+        <ul class="mains">
+            <li>2x2<br><img src="img/shishuang.jpg"><br>Magnetic 55mm Fangshi Shuangren</li>
+            <li>3x3<br><img src="img/gts2.png"><br>Magnetic Moyu Weilong GTS2</li>
+            <li>4x4<br><img src="img/wuque.png"><br>Magnetic Qiyi Wuque</li>
+            <li>5x5<br><img src="img/wushuang.jpg"><br>Magnetic Qiyi Wushuang</li>
+            <li>6x6<br><img src="img/wuhua.jpg"><br>Magnetic Qiyi Wuhua v2</li>
+            <li>7x7<br><img src="img/aofu.jpeg"><br>Moyu Aofu</li>
+            <li>OH<br><img src="img/OH.jpg"><br>Magnetic 50mm Cubing Classroom</li>
+            <li>Clock<br><img src="img/clock.jpg"><br>CubeTwist Clock</li>
+            <li>Megaminx<br><img src="img/mega.png"><br>CH Galaxy Megaminx V2 M</li>
+            <li>Pyraminx<br><img src="img/pyra.png"><br>Moyu Magnetic</li>
+            <li>Skewb<br><img src="img/skewb.png"><br>Moyu Magnetic</li>
+            <li>Square-1<br><img src="img/sq1.jpeg"><br>Qiyi Square-1</li>
+        </ul>
+        <h2>Guides and Algorithm Lists</h2>
+        <ul class="cubing">
+            <li><a href="Solutions/MCCBeginnerMethod.pdf">Beginner Method</a></li>
+            <li><a href="Solutions/Yuxuan_4LLL.pdf">4 Look Last Layer</a></li>
+            <li><a href="Solutions/Yuxuan_Full_PLL.pdf">Full PLL List</a></li>
+            <li><a href="Solutions/Yuxuan_Full_OLL.pdf">Full OLL List</a></li>
+        </ul>
 
-    <h1 class="profiles">Profiles</h1>
-    <ul>
-        <li><a href="https://github.com/yuxuibbs">Github</a></li>
-        <li><a href="https://www.worldcubeassociation.org/results/p.php?i=2011CHEN54">World Cube Association</a></li>
-    </ul>
-    
-    <h1 class="projects">Open Source Projects</h1>
-    <div class="project-list">
-        <ul>
-            <li><a href="https://github.com/yuxuibbs/yuxuibbs.github.io">Personal Website</a></li>
-            <li><a href="http://agplayer.herokuapp.com/">LinguiSHTIK solution finder</a></li>
-            <li><a href="https://github.com/yuxuibbs/CubeToaster">CubeToaster</a></li>
-            <li><a href="https://github.com/thewca/worldcubeassociation.org">World Cube Association Website</a></li>
-            <li><a href="https://github.com/yuxuibbs/WCA-Statistics">World Cube Association Database Statistics</a></li>
-            <li><a href="https://github.com/yuxuibbs/ArborHacks2-project">Random Meme Sender</a></li>
-        </ul>
-        <h1 class="projects">Other Projects</h1>
-        <p>These are the projects with code that cannot be shared publicly due to course restrictions (such as the University of Michigan Engineering Honor Code) and data sensitivity concerns. Feel free to <a href="contact.html">contact me</a> for details on these projects.</p>
-        <ul>
-            <li>MLAG registration and scoring program</li>
-            <li>Kidney segmentation program</li>
-            <li>Stenosis detection program</li>
-            <li>Equations tricks finder for Academic Games</li>
-            <li>AI that plays a turn-based dungeon exploration game</li>
-            <li><a href="http://0hh1.com/">0hh1</a> solver</li>
-        </ul>
+        <footer class="footer">
+            <p>Created by Yuxuan Chen &copy; 2018</p>
+        </footer>
     </div>
-    
-    <h1>Mains</h1>
-    <ul>
-        <li><img src="img/shishuang.jpg"><br>55mm Fangshi Shuangren</li>
-    </ul>
-    <h1>Guides and Algorithm Lists</h1>
-    <ul class="cubing">
-        <li><a href="Solutions/MCCBeginnerMethod.pdf">Beginner Method</a></li>
-        <li><a href="Solutions/Yuxuan_4LLL.pdf">4 Look Last Layer</a></li>
-        <li><a href="Solutions/Yuxuan_Full_PLL.pdf">Full PLL List</a></li>
-        <li><a href="Solutions/Yuxuan_Full_OLL.pdf">Full OLL List</a></li>
-    </ul>
-
-    <footer class="footer">
-        <p>Created by Yuxuan Chen &copy; 2018</p>
-    </footer>
 </body>
 </html>
