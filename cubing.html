@@ -4,35 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Yuxuan's website</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Nunito" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="index.html"><img src="img/logo.jpg" alt="home"></a>
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a class="current-page" href="cubing.html">Cubing</a></li>
-         </ul> 
-    </nav>
+    <div class="container">
+        <header>
+            <h1 class="title">Yuxuan's website</h1>
+            <div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="home"></a></div>
+            <nav class="nav">
+                <ul>
+                    <li><a id="current-page" href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="cubing.html">Cubing</a></li>
+                </ul>
+            </nav> 
+        </header>
 
-    <h1 class="title">Yuxuan's website</h1>
-    
-    <h2>Guides and Algorithm Lists</h2>
-    <ul>
-        <li><a href="Solutions/MCCBeginnerMethod.pdf">Beginner Method</a></li>
-        <li><a href="Solutions/Yuxuan_4LLL.pdf">4 Look Last Layer</a></li>
-        <li><a href="Solutions/Yuxuan_Full_PLL.pdf">Full PLL List</a></li>
-        <li><a href="Solutions/Yuxuan_Full_OLL.pdf">Full OLL List</a></li>
-    </ul>
+        <h2>CubeToaster</h2>
+        <a class="cubetoaster" href="https://github.com/yuxuibbs/CubeToaster"><img src="img/cubetoaster.png"></a>
 
-    <footer class="footer">
-        <p>Created by Yuxuan Chen &copy; 2018</p>
-    </footer>
+        <h2>Mains</h2>
+        <p>These are the mains I use for every WCA event that I compete in.</p>
+        <ul class="mains">
+            <li>2x2: Magnetic 55mm Fangshi Shuangren<br><img src="img/shishuang.jpg"></li>
+            <li>3x3: Magnetic Moyu Weilong GTS2<br><img src="img/gts2.png"></li>
+            <li>4x4: Magnetic Qiyi Wuque<br><img src="img/wuque.jpg"></li>
+            <li>5x5: Magnetic Qiyi Wushuang<br><img src="img/wushuang.jpg"></li>
+            <li>6x6: Magnetic Qiyi Wuhua v2<br><img src="img/wuhua.jpg"></li>
+            <li>7x7: Moyu Aofu<br><img src="img/aofu.jpeg"></li>
+            <li>OH: Magnetic 50mm Cubing Classroom<br><img src="img/OH.jpg"></li>
+            <li>Clock: CubeTwist Clock<br><img src="img/clock.jpg"></li>
+            <li>Megaminx: CH Galaxy Megaminx V2 M<br><img src="img/mega.png"></li>
+            <li>Pyraminx: Moyu Magnetic Pyraminx<br><img src="img/pyra.jpg"></li>
+            <li>Skewb: Moyu Magnetic<br><img src="img/skewb.png"></li>
+            <li>Square-1: Qiyi Square-1<br><img src="img/sq1.jpg"></li>
+        </ul>
+        <h2>Guides and Algorithm Lists</h2>
+        <ul class="cubing">
+            <li><a href="Solutions/MCCBeginnerMethod.pdf">Beginner Method</a></li>
+            <li><a href="Solutions/Yuxuan_4LLL.pdf">4 Look Last Layer</a></li>
+            <li><a href="Solutions/Yuxuan_Full_PLL.pdf">Full PLL List</a></li>
+            <li><a href="Solutions/Yuxuan_Full_OLL.pdf">Full OLL List</a></li>
+        </ul>
+
+        <footer class="footer">
+            <p>Created by Yuxuan Chen &copy; 2018</p>
+        </footer>
+    </div>
 </body>
 </html>

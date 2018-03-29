@@ -1,6 +1,12 @@
 /* Navbar stuff */
 .logo img {
     height: 2.5em;
+    border-radius: 15%;
+}
+
+div.logo a {
+    line-height: 0;
+    display: block;
 }
 
 header {
@@ -19,6 +25,7 @@ h1.title {
     width: 15%;
     vertical-align: middle;
 }
+
 
 .nav {
     width: 80%;
@@ -42,7 +49,12 @@ h1.title {
     font-size: 0.8em;
 }
 
-.current-page {
+.nav ul li a:hover {
+    color: #FFE658;
+    font-size: 1.2em;
+}
+
+#current-page {
     background-color: #005B96;
 }
 
@@ -50,9 +62,20 @@ h1.title {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Nunito", Arial, sans-serif;
+    font-family: "Alegreya", serif;
     background-color: #F6F6F6;
     color: #2B2B2B;
+}
+
+h1, h2 {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -72,20 +95,12 @@ img {
     width: 25%;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
 .cubing {
     background-image: url("../img/rubiks_background.jpg");
 }
 
 .cubing a {
-    background-color: #2B2B2B;
-    color: #F6F6F6;
-    text-decoration: none;
+    background-color: #F6F6F6;
 }
 
 ul li a {
@@ -97,8 +112,12 @@ ul li {
     color: #2B2B2B;
 }
 
-/* different screen sizes */
-/*iPads*/
+ul li a:hover {
+    font-size: 1.2em;
+}
+
+
+/* iPads */
 @media only screen and (min-width: 768px) {
     .nav ul li {
         margin: 20px;
