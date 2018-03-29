@@ -1,3 +1,52 @@
+/* Navbar stuff */
+.logo img {
+    height: 2.5em;
+}
+
+header {
+    font-size: 1.2em;
+    font-weight: bold;
+    background: #2B2B2B;
+}
+
+h1.title {
+    margin: 0;
+    color: #FFE658;
+}
+
+.nav, .logo {
+    display: inline-block;
+    width: 15%;
+    vertical-align: middle;
+}
+
+.nav {
+    width: 80%;
+    text-align: right;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 3px;
+}
+
+.nav ul li a {
+    color: #F6F6F6;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.current-page {
+    background-color: #005B96;
+}
+
+/* Rest of the document */
 body {
     margin: 0;
     padding: 0;
@@ -6,88 +55,67 @@ body {
     color: #2B2B2B;
 }
 
-.logo img {
-    height: 2.5em;
-}
-/*.project-list a {
-    text-decoration: none;
-    color: ;
-}*/
-
-/* Navbar stuff */
-header {
-    font-size: 1.2em;
-    font-weight: bold;
-    background: #2B2B2B;
-/*    position: fixed;
-    width: 100%;
-    top: 0px;*/
-}
-h1.title {
-    margin: 0;
-    color: #FFE658;
-}
-.nav, .logo {
-    display: inline-block;
-    width: 15%;
-    vertical-align: middle;
-}
-.nav {
-    width: 80%;
-    text-align: right;
-}
-.nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 1em;
-}
-.nav ul li {
-    display: inline;
-    margin-left: 10px;
-}
-.nav ul li a {
-    color: #F6F6F6;
-    text-decoration: none;
-    font-size: 0.9em;
-}
-.current-page {
-    background-color: #005B96;
-}
-
-
-
-
 .container {
     width: 100%;
     margin: 0 auto;
 }
+
 img {
     max-width: 100%;
 }
+
 .mains img {
     width: 25%;
 }
+
 .cubetoaster img {
     width: 25%;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 .cubing {
     background-image: url("../img/rubiks_background.jpg");
 }
+
 .cubing a {
     background-color: #2B2B2B;
     color: #F6F6F6;
     text-decoration: none;
 }
+
 ul li a {
     color: #2B2B2B;
     text-decoration: none;
 }
+
 ul li {
     color: #2B2B2B;
+}
+
+/* different screen sizes */
+/*iPads*/
+@media only screen and (min-width: 768px) {
+    .nav ul li {
+        margin: 20px;
+    }
+
+    .nav ul li a {
+        font-size: 1em;
+    }
+}
+
+/* desktops and laptops */
+@media only screen and (min-width: 1224px) {
+    .nav ul li {
+        margin: 75px;
+    }
+
+    .nav ul li a {
+        font-size: 1em;
+    }
 }
