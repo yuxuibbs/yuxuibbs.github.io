@@ -103,16 +103,12 @@ img {
     background-color: #F6F6F6;
 }
 
-ul li a {
+div a {
     color: #2B2B2B;
     text-decoration: none;
 }
 
-ul li {
-    color: #2B2B2B;
-}
-
-ul li a:hover {
+div a:hover {
     font-size: 1.2em;
 }
 
