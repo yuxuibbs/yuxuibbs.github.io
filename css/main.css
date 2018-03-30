@@ -62,7 +62,7 @@ h1.title {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Alegreya", serif;
+    font-family: "Lora", serif;
     background-color: #F6F6F6;
     color: #2B2B2B;
 }
@@ -99,10 +99,6 @@ img {
     background-image: url("../img/rubiks_background.jpg");
 }
 
-.cubing a {
-    background-color: #F6F6F6;
-}
-
 div a {
     color: #2B2B2B;
     text-decoration: none;
@@ -111,6 +107,29 @@ div a {
 div a:hover {
     font-size: 1.2em;
 }
+
+.project, .guide, .main-cube {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.main-cube {
+    width: 45%;
+}
+
+.guide h3 {
+    margin: 0;
+}
+
+.guide {
+    background: #2B2B2B;
+    background-color: #F6F6F6;
+    background-clip: content-box;
+}
+
 
 
 /* iPads */
