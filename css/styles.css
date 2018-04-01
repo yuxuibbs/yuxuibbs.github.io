@@ -29,7 +29,7 @@ h1.title {
 
 .nav {
     width: 80%;
-    text-align: right;
+    /*text-align: right;*/
 }
 
 .nav ul {
@@ -46,7 +46,7 @@ h1.title {
 .nav ul li a {
     color: #F6F6F6;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .nav ul li a:hover {
@@ -135,11 +135,7 @@ div a:hover {
 /* iPads */
 @media only screen and (min-width: 768px) {
     .nav ul li {
-        margin: 20px;
-    }
-
-    .nav ul li a {
-        font-size: 1em;
+        padding: 0 20px;
     }
 
     .project, .guide, .main-cube {
@@ -150,14 +146,22 @@ div a:hover {
 /* desktops and laptops */
 @media only screen and (min-width: 1224px) {
     .nav ul li {
-        margin: 75px;
-    }
-
-    .nav ul li a {
-        font-size: 1em;
+        padding: 0 5%;
     }
 
     .project, .guide, .main-cube {
         width: 24%;
     }
+}
+
+/* phones */
+@media only screen and (max-width: 768px) {
+    .nav ul li a {
+        display: block;
+    }
+    .nav {
+        width: 100%;
+        text-align: center;
+    }
+
 }
