@@ -21,15 +21,17 @@ h1.title {
     color: #F6F6F6;
 }
 
-.nav, .logo {
+.title, .nav, .logo {
     display: inline-block;
-    width: 15%;
     vertical-align: middle;
 }
 
+.title {
+    width: 35%;
+}
 
 .nav {
-    width: 80%;
+    width: 58%;
     text-align: right;
 }
 
@@ -167,10 +169,11 @@ div a:hover {
     
     .logo {
         display: block;
-        margin: 0 auto;
+        text-align: center;
     }
 
     h1.title {
         text-align: center;
+        width: 100%;
     }
 }
