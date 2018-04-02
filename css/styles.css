@@ -93,7 +93,7 @@ img {
     width: 75%;
 }
 
-.cubing {
+.guides {
     background-image: url("../img/rubiks_background.jpg");
 }
 
@@ -102,13 +102,16 @@ div a {
     text-decoration: none;
 }
 
-.project, .guide, .main-cube {
-    display: inline-block;
+.project-list, .mains, .guides {
     box-sizing: border-box;
-    width: 40%;
-    vertical-align: top;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.project, .main-cube, .guide {
+    padding: 15px;
+}
+
 
 .main-cube {
     width: 45%;
@@ -130,8 +133,10 @@ div a {
     .nav ul li {
         padding: 0 20px;
     }
-    .project, .guide, .main-cube {
-        width: 32%;
+
+    .project, .main-cube, .guide {
+        flex: 20%;
+        max-width: 20%;
     }
 }
 
@@ -149,8 +154,9 @@ div a {
         width: 90%;
     }
 
-    .project, .guide, .main-cube {
-        width: 24%;
+    .project, .main-cube, .guide {
+        flex: 15%;
+        max-width: 15%;
     }
 }
 
@@ -173,5 +179,10 @@ div a {
     h1.title {
         text-align: center;
         width: 100%;
+    }
+
+    .project, .main-cube, .guide {
+        flex: 45%;
+        max-width: 45%;
     }
 }
