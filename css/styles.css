@@ -17,7 +17,6 @@ header {
 
 h1.title {
     margin: 0;
-    /*color: #FFE658;*/
     color: #F6F6F6;
 }
 
@@ -91,11 +90,7 @@ img {
 }
 
 .mains img {
-    width: 25%;
-}
-
-.cubetoaster img {
-    width: 25%;
+    width: 75%;
 }
 
 .cubing {
@@ -105,10 +100,6 @@ img {
 div a {
     color: #2A2A8A;
     text-decoration: none;
-}
-
-div a:hover {
-    font-size: 1.2em;
 }
 
 .project, .guide, .main-cube {
@@ -135,20 +126,27 @@ div a:hover {
 
 
 /* iPads */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 850px) {
     .nav ul li {
         padding: 0 20px;
     }
-
     .project, .guide, .main-cube {
         width: 32%;
     }
 }
 
 /* desktops and laptops */
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1200px) {
     .nav ul li {
         padding: 0 5%;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .nav {
+        width: 90%;
     }
 
     .project, .guide, .main-cube {
@@ -157,7 +155,7 @@ div a:hover {
 }
 
 /* phones */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     .nav ul li a {
         display: block;
     }
