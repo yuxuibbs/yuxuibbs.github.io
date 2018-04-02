@@ -17,7 +17,8 @@ header {
 
 h1.title {
     margin: 0;
-    color: #FFE658;
+    /*color: #FFE658;*/
+    color: #F6F6F6;
 }
 
 .nav, .logo {
@@ -29,7 +30,7 @@ h1.title {
 
 .nav {
     width: 80%;
-    /*text-align: right;*/
+    text-align: right;
 }
 
 .nav ul {
@@ -100,7 +101,7 @@ img {
 }
 
 div a {
-    color: #2B2B2B;
+    color: #2A2A8A;
     text-decoration: none;
 }
 
@@ -131,7 +132,6 @@ div a:hover {
 }
 
 
-
 /* iPads */
 @media only screen and (min-width: 768px) {
     .nav ul li {
@@ -159,9 +159,18 @@ div a:hover {
     .nav ul li a {
         display: block;
     }
+    
     .nav {
         width: 100%;
         text-align: center;
     }
+    
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
 
+    h1.title {
+        text-align: center;
+    }
 }

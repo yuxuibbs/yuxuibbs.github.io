@@ -4,50 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Yuxuan's website</title>
-    <link href="https://fonts.googleapis.com/css?family=Alegreya|Nunito" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="title">Yuxuan's website</h1>
-            <div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="home"></a></div>
-            <nav class="nav">
-                <ul>
-                    <li><a id="current-page" href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="cubing.html">Cubing</a></li>
-                </ul>
-            </nav> 
-        </header>
-
-        <h2 class="projects">Open Source Projects</h2>
-        <div class="project-list">
+    <header>
+        <h1 class="title">Yuxuan's website</h1>
+        <div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="home"></a></div>
+        <nav class="nav">
             <ul>
-                <li><a href="https://github.com/yuxuibbs/yuxuibbs.github.io">Personal Website</a></li>
-                <li><a href="http://agplayer.herokuapp.com/">LinguiSHTIK solution finder</a></li>
-                <li><a href="https://github.com/yuxuibbs/CubeToaster">CubeToaster</a></li>
-                <li><a href="https://github.com/thewca/worldcubeassociation.org">World Cube Association Website</a></li>
-                <li><a href="https://github.com/yuxuibbs/WCA-Statistics">World Cube Association Database Statistics</a></li>
-                <li><a href="https://github.com/yuxuibbs/ArborHacks2-project">Random Meme Sender</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="current-page" href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="cubing.html">Cubing</a></li>
             </ul>
+        </nav> 
+    </header>
+
+    <div class="container">
+        <h2 class="projects">Open Source Projects</h2>
+        <p>All of my open source GitHub projects can be found <a href="https://github.com/yuxuibbs">here</a></p>
+        <div class="project-list">
+            <div class="project">
+                <h3>LinguiSHTIK solution finder</h3>
+                <a href="https://agplayer.herokuapp.com/">Application link</a><br>
+                <a href="https://github.com/yuxuibbs/Academic-Games-Player">GitHub Link</a>
+                <p>Enter a list of demands for the game LinguiSHTIK and the program will return a sentence that fulfills those demands.</p>
+            </div>
+            <div class="project">
+                <h3>CubeToaster</h3>
+                <a href="https://github.com/yuxuibbs/CubeToaster">GitHub link</a>
+                <p>Enter the registration file from the CubingUSA or WCA registration systems and automatically sort people into heats and make a printable document with all the score sheets sorted by event and heat number</p>
+            </div>
+            <div class="project">
+                <h3>World Cube Association Website</h3>
+                <a href="https://github.com/thewca/worldcubeassociation.org">GitHub link</a>
+                <p>Code for the official website for the World Cube Association</p>
+            </div>
+            <div class="project">
+                <h3>World Cube Association Database Statistics</h3>
+                <a href="https://github.com/yuxuibbs/WCA-Statistics">GitHub link</a>
+                <p>Interesting statistics generated from the <a href="https://www.worldcubeassociation.org/results/misc/export.html">WCA database export</a></p>
+            </div>
+            <div class="project">
+                <h3>Random meme sender</h3>
+                <a href="https://github.com/yuxuibbs/ArborHacks2-project">GitHub link</a>
+                <p>Text 734-794-3419 to get a random meme</p>
+            </div>
+            
             <h2 class="projects">Other Projects</h2>
             <p>These are the projects with code that cannot be shared publicly due to course restrictions (such as the University of Michigan Engineering Honor Code) and data sensitivity concerns.</p>
-            <ul>
-                <li>MLAG registration and scoring program</li>
-                <li>Kidney segmentation program</li>
-                <li>Stenosis detection program</li>
-                <li>Equations tricks finder for Academic Games</li>
-                <li>AI that plays a turn-based dungeon exploration game</li>
-                <li><a href="http://0hh2.com/">0hh1</a> solver</li>
-            </ul>
+            <div class="project">
+                <h3>MLAG registration and scoring program</h3>
+                <p>Application for registration and scoring for the Michigan Leagues of Academic Games State Tournaments</p>
+            </div>
+            <div class="project">
+                <h3>Kidney segmentation program</h3>
+                <p>Program that takes in CT scans and maps out the kidneys</p>
+            </div>
+            <div class="project">
+                <h3>Stenosis detection program</h3>
+                <p>Program that takes in coronary angiograms and detects stenosis (blood vessel thinning)</p>
+            </div>
+            <div class="project">
+                <h3>Equations tricks finder for Academic Games</h3>
+                <p>Program that finds good Equations tricks</p>
+            </div>
+            <div class="project">
+                <h3>AI that plays a turn-based dungeon exploration game</h3>
+                <p>AI for 183 Siege</p>
+            </div>
+            <div class="project">
+                <h3>0hh1 solver</h3>
+                <p>Enter a valid 0hh1 game board and get the solution for that board</p>
+            </div>
         </div>
 
-        <footer class="footer">
-            <p>Created by Yuxuan Chen &copy; 2018</p>
-        </footer>
-    </div>
+    <footer class="footer">
+        <p>Created by Yuxuan Chen &copy; 2018</p>
+    </footer>
 </body>
 </html>
