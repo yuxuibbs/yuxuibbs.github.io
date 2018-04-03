@@ -84,6 +84,7 @@ ul {
 .container {
     width: 100%;
     margin: 0 auto;
+    padding-top: 5px;
 }
 
 img {
@@ -171,6 +172,11 @@ div a {
     .project, .main-cube, .guide {
         flex: 15%;
         max-width: 15%;
+    }
+
+    .intro, .resume-container {
+        margin: 0 20%;
+        width: auto;
     }
 }
 
