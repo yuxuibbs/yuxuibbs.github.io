@@ -65,7 +65,6 @@ h1.title {
 
 .nav ul li a:hover {
     color: #FFE658;
-    font-size: 1.2em;
 }
 
 #current-page {
@@ -150,13 +149,14 @@ div a {
     width: 95%;
 }
 
-.AGLinks {
-    display: inline-block;
-    padding-right: 5%;
+table {
+    table-layout: auto;
+    width: 50%;
+    text-align: left;
 }
 
-.AGLinks td {
-    padding-right: 5%;
+.readingGames {
+    padding-left: 3px;
 }
 
 .footer p {
