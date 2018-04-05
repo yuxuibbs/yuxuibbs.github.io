@@ -26,7 +26,7 @@ header {
 
 h1.title {
     margin: 0;
-    color: #F6F6F6;
+    color: #FFE658;
     text-align: center;
     width: 100%;
 }
@@ -150,7 +150,6 @@ div a {
 }
 
 table {
-    table-layout: auto;
     width: 100%;
     text-align: left;
 }
@@ -163,7 +162,15 @@ table {
     display: inline-block;
 }
 
+.footer a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: #2A2A8A;
+}
 
+.footer a:hover {
+    color: #2B2B2B;
+}
 
 /* tablets */
 @media only screen and (min-width: 850px) {
