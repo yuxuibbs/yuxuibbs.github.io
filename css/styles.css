@@ -146,12 +146,30 @@ div a {
     background-clip: content-box;
 }
 
+#ling {
+    width: 95%;
+}
+
+.AGLinks {
+    display: inline-block;
+    padding-right: 5%;
+}
+
+.AGLinks td {
+    padding-right: 5%;
+}
+
+.footer p {
+    display: inline-block;
+}
+
+
 
 /* iPads */
 @media only screen and (min-width: 850px) {
     div.logo {
         width: auto;
-        padding-left: 15px;
+        padding-left: 50px;
     }
 
     h1.title {
@@ -159,13 +177,13 @@ div a {
     }
 
     .nav {
-        width: 55%;
+        width: 50%;
         text-align: right;
     }
 
     .nav ul li {
         display: inline-block;
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     .nav ul li a {
@@ -201,7 +219,7 @@ div a {
     }
 
     .nav ul li {
-        padding: 0 8%;
+        padding: 0 5%;
     }
 
     .nav {

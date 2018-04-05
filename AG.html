@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Yuxuan's website</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <script>
+        var windowWidth = parseInt($(window).width());
+        // window.addEventListener("resize" , function() {
+        //     console.log(window.matchMedia('screen and (min-width: 850)'));
+        //     // make navbar width consistent for tablet view
+        //     if (window.matchMedia('screen and (min-width: 850)')) {
+        //         console.log(window.matchMedia('screen and (min-width: 850)'));
+        //         $(".nav").css("width", windowWidth - 425 + 'px');
+        //     }
+        //     else if (window.matchMedia('screen and (min-width: 1200)')) {
+        //         console.log(window.matchMedia('screen and (min-width: 1200)'));
+        //         $(".nav").css("width", windowWidth - 425 + 'px');
+        //     }
+        //     else {
+        //         $(".nav").css("width", '100%')
+        //     }
+        // });
+
+        $(document).ready(function() {
+            // make Mr. Ling iframe window fit the screen
+            // values are determined by observation
+            if (windowWidth > 875) {
+                $("#ling").css('height', '800px');
+            }
+            else if (windowWidth < 750) {
+                $("#ling").css('height', 1600 - windowWidth + 'px');
+            }
+            else {
+                $("#ling").css('height', Math.max(825, 1800 - windowWidth * 1.2) + 'px');
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="title">Yuxuan's website</h1>
+        <div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="home"></a></div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="cubing.html">Cubing</a></li>
+                <li><a id="current-page" href="AG.html">Academic Games</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Quick References</h2>
+            <table class="AGLinks">
+                <tr>
+                    <th>Elementary</th>
+                    <th>Middle</th>
+                </tr>
+                <tr>
+                    <td><a href="https://agloa.org/wp-content/uploads/ElEqsEvenVars17-18.pdf">Elementary EQ</a></td>
+                    <td><a href="https://agloa.org/wp-content/uploads/MidEqsEvenVars17-18.pdf">Middle EQ</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://agloa.org/wp-content/uploads/OSVarListEL2017-18.pdf">Elementary OS</a></td>
+                    <td><a href="https://agloa.org/wp-content/uploads/OSVarListMI2017-18.pdf">Middle OS</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://agloa.org/wp-content/uploads/LingOrderOfPlayElem1718.pdf">Elementary Ling</a></td>
+                    <td><a href="https://agloa.org/wp-content/uploads/LingOrderOfPlayMid1718.pdf">Middle Ling</a></td>
+                </tr>
+            </table>
+            <ul class="AGLinks">
+                <li><a href="https://agloa.org/wp-content/uploads/PropTechniqueList.pdf">Prop Technique List</a></li>
+                <li><a href="https://agloa.org/wp-content/uploads/PresChart1-12.pdf">Prez 1-12</a></li>
+                <li><a href="https://agloa.org/wp-content/uploads/PresChart13-24.pdf">Prez 13-24</a></li>
+                <li><a href="https://agloa.org/wp-content/uploads/PresChart25-34.pdf">Prez 25-34</a></li>
+                <li><a href="https://agloa.org/wp-content/uploads/PresChart35-45.pdf">Prez 35-45</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="section">
+            <h2>Mr. Ling (LinguiSHTIK solution finder)</h2>
+            <iframe id="ling" src="https://agplayer.herokuapp.com/" aria-label="preview of Mr. Ling, the LinguiSHTIK solution finder"></iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <hr>
+        <p>Created by Yuxuan Chen &copy; 2018</p>
+        <a href="mailto:yuxuanc@umich.edu?Subject=Website"><i class="fas fa-envelope"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
+    </footer>
+</body>
+</html>
