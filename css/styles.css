@@ -159,12 +159,12 @@ table {
 }
 
 .footer p {
-    display: inline-block;
+    line-height: 0;
 }
 
 .footer a {
     text-decoration: none;
-    padding-left: 10px;
+    padding-right: 15px;
     color: #2A2A8A;
 }
 
@@ -211,6 +211,15 @@ table {
         display: inline-grid;
         grid-template-columns: 2fr 1fr;
     }
+
+    .footer p {
+        display: inline-block;
+    }
+
+    .footer a {
+        padding-right: 0;
+        padding-left: 15px;
+    }
 }
 
 /* desktops */
@@ -241,5 +250,14 @@ table {
     .intro, .resume-container {
         margin: 0 20%;
         width: auto;
+    }
+
+    .footer p {
+        display: inline-block;
+    }
+
+    .footer a {
+        padding-right: 0;
+        padding-left: 30px;
     }
 }
