@@ -93,9 +93,15 @@ ul {
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
+    width: auto;
+    margin: 2%;
     padding-top: 5px;
+}
+
+#avatar {
+    max-width: 50%;
 }
 
 img {
@@ -154,8 +160,8 @@ table {
     text-align: left;
 }
 
-.readingGames {
-    padding-left: 3px;
+.references {
+    padding-left: 10px;
 }
 
 .footer p {
@@ -207,11 +213,6 @@ table {
         max-width: 25%;
     }
 
-    .intro {
-        display: inline-grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
     .footer p {
         display: inline-block;
     }
@@ -243,13 +244,12 @@ table {
     }
 
     .project, .main-cube, .guide {
-        flex: 15%;
-        max-width: 15%;
+        flex: 14%;
+        max-width: 14%;
     }
 
     .intro, .resume-container {
-        margin: 0 20%;
-        width: auto;
+        margin-right: 50%;
     }
 
     .footer p {
