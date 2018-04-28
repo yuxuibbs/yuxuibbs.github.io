@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready( function() {
+            $('#equation').on('change keyup paste', function() {
+                var value = $('#equation')[0]['value'];
+                var answer = eval(value);
+                if (answer) {
+                    $('#result').html(eval(value));
+                }
+            })
+        })
+    </script>
 </head>
 <body>
     <header>
@@ -18,20 +30,22 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a id="current-page" href="resume.html">Resume</a></li>
                 <li><a href="cubing.html">Cubing</a></li>
                 <li><a href="AG.html">Academic Games</a></li>
             </ul>
         </nav> 
     </header>
 
-    <div class="container resume-container">
-        <h2 class="resume">Resume</h2>
-        <ul>
-            <li><a href="files/resume.pdf">Resume (PDF)</a></li>
-        </ul>
-        
-        <img src="img/resume.png" alt="Yuxuan's resume">
+    <div class="container">
+        <h2>Equations Solver</h2>
+        <li>Power: **</li>
+        <li>K: %</li>
+        <br>
+        <form>
+            <label for="equation">Equation:</label>
+            <input type="text" name="equation" id="equation">
+        </form>
+        <p id="result">Result</p>
     </div>
 
     <footer class="footer">
