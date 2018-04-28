@@ -10,17 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script>
-        $(document).ready( function() {
-            $('#equation').on('change keyup paste', function() {
-                var value = $('#equation')[0]['value'];
-                var answer = eval(value);
-                if (answer) {
-                    $('#result').html(eval(value));
-                }
-            })
-        })
-    </script>
+    <script src="js/EQsolver.js"></script>
 </head>
 <body>
     <header>
