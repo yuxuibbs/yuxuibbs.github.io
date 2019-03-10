@@ -112,43 +112,33 @@ img {
     width: 75%;
 }
 
-.guides {
-    background-image: url("../img/rubiks_background.jpg");
-}
-
 div a {
     color: #2A2A8A;
     text-decoration: none;
 }
 
-.project-list, .mains, .guides {
+.project-list {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
 }
 
-.project, .main-cube, .guide {
+.project {
     padding: 15px;
     flex: 45%;
     width: 45%;
+}
+
+.cubetoaster {
+    display: inline-block;
 }
 
 .cubetoaster img {
     width: 25%;
 }
 
-.main-cube {
-    width: 45%;
-}
-
-.guide h3 {
-    margin: 0;
-}
-
-.guide {
-    background: #2B2B2B;
-    background-color: #F6F6F6;
-    background-clip: content-box;
+.cubetoaster p {
+    width: 75%;
 }
 
 #ling {
