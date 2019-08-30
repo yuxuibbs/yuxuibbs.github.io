@@ -9,89 +9,169 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" rel="stylesheet"/>
+    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
 </head>
 <body>
-    <header>
-        <h1 class="title">Yuxuan Chen</h1>
-        <div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="home"></a></div>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a id="current-page" href="projects.html">Projects</a></li>
-                <li><a href="cubing.html">Cubing</a></li>
-                <li><a href="AG.html">Academic Games</a></li>
-            </ul>
-        </nav> 
-    </header>
+    <div id="insertNavBar"></div>
 
     <div class="container">
-        <h2 class="projects">Open Source Projects</h2>
+        <h2>Projects</h2>
         <p>All of my open source GitHub projects can be found <a href="https://github.com/yuxuibbs">here</a></p>
-        <div class="project-list">
-            <div class="project">
-                <h3>LinguiSHTIK and WFF 'N Proof solution finder</h3>
-                <a href="https://agplayer.herokuapp.com/">Application link</a><br>
-                <a href="https://github.com/yuxuibbs/Academic-Games-Player">GitHub Link</a>
-                <p>For the game LinguiSHTIK: Enter a list of demands for the game LinguiSHTIK and the program will return a sentence that fulfills those demands.</p>
-                <p>For the game WFF 'N Proof: Enter the premises and the goal and the program will return a proof.</p>
+
+        <h2>Healthcare Projects</h2>
+        <div class="row" id="projects">
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>Clinical Data Warehouse</h3>
+                    <p><strong>PostgreSQL, Python</strong></p>
+                    <p>Create a greenfield clinical data warehouse that aggregates data from commercial payers, clinical laboratories, EMR/EHR systems, hospitals, and other sources to support a population health registry</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>CubeToaster</h3>
-                <a href="https://github.com/yuxuibbs/CubeToaster">GitHub link</a>
-                <p>Enter the registration file from the CubingUSA or WCA registration systems, automatically sort people into heats, and make a printable document with all the score sheets sorted by event and heat number</p>
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>ACRS (Active Care Relationship Service) File Generator</h3>
+                    <p><strong>PostgreSQL</strong></p>
+                    <p>Create ACRS files based on information stored in a clinical data warehouse to send information to MiHIN (Michigan Health Information Network)</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>World Cube Association Website</h3>
-                <a href="https://github.com/thewca/worldcubeassociation.org">GitHub link</a>
-                <p>Code for the official website for the World Cube Association</p>
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>Kidney Segmentation Program</h3>
+                    <p><strong>MATLAB</strong></p>
+                    <p>Program that takes in CT scans and maps out the kidneys based on entropy while detecting injuries</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>World Cube Association Database Statistics</h3>
-                <a href="https://github.com/yuxuibbs/WCA-Statistics">GitHub link</a>
-                <p>Interesting statistics generated from the <a href="https://www.worldcubeassociation.org/results/misc/export.html">WCA database export</a></p>
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>Stenosis Detection Program</h3>
+                    <p><strong>MATLAB</strong></p>
+                    <p>Program that takes in coronary angiograms and detects stenosis (blood vessel thinning)</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Random meme sender</h3>
-                <a href="https://github.com/yuxuibbs/ArborHacks2-project">GitHub link</a>
-                <p>Text 734-794-3419 to get a random meme</p>
+        </div>
+
+        <h2>Academic Games Projects</h2>
+        <div class="row" id="projects">
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>
+                        Online Academic Games Practice Tool
+                    </h3>
+                    <p><strong>HTML, CSS, JavaScript, jQuery</strong></p>
+                    <p>Study tool for Academic Games players to help players study old Academic Games tournament questions for the games Presidents and Propaganda and practice various Equations tricks</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>
+                        Academic Games Player
+                        <a href="https://github.com/yuxuibbs/Academic-Games-Player"><i class="fab fa-github"></i></a>
+                        <a href="https://agplayer.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
+                    </h3>
+                    <p><strong>Python, Python Flask</strong></p>
+                    <p>Solution finding application for the games LinguiSHTIK and WFF N’ Proof for coaches and students to use as an educational tool</p>
+                    <p>For the game LinguiSHTIK: Enter a list of demands for the game LinguiSHTIK and the program will return a sentence that fulfills those demands.</p>
+                    <p>For the game WFF 'N Proof: Enter the premises and the goal and the program will return a proof.</p>
+                </div> 
+            </div>
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>Michigan Leagues of Academic Games Registration and Scoring System</h3>
+                    <p><strong>Python Flask, HTML, CSS, JavaScript, Jinja2, PostgreSQL, Heroku</strong></p>
+                    <p>Digitize and automate the paper-based registration and scoring system used for Michigan Leagues of Academic Games tournaments to save hundreds of hours of manual calculations every year</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>
+                        Presidents Game Study Guide Creator
+                        <a href="https://github.com/yuxuibbs/PrezWorksheetCreator"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <p><strong>Python, LaTeX, SQL</strong></p>
+                    <p>Dynamically generate a study guide based on a database that has information about every president to help students study for the game Presidents</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>
+                        Academic Games States and Nationals Team Calculator
+                        <a href="https://github.com/yuxuibbs/AG-team-calculator"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <p><strong>Python Flask</strong></p>
+                    <p>Website that calculates potential team configurations for Academic Games State and National tournaments based on previous tournament results</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Cubing Projects</h2>
+        <div class="row" id="projects">
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>
+                        CubeToaster
+                        <a href="https://github.com/yuxuibbs/CubeToaster"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <p><strong>Python, HTML, CSS, JavaScript</strong></p>
+                    <p>Enter the registration file from the CubingUSA or WCA registration systems, automatically sort people into heats, and make a printable document with all the score sheets sorted by event and heat number</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>
+                        World Cube Association Database Statistics Explorer
+                        <a href="https://github.com/yuxuibbs/WCA-Data-Django-App"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <p><strong>Python, Django, SQL</strong></p>
+                    <p>Website with a REST API that helps users explore and discover interesting statistics in the <a href="https://www.worldcubeassociation.org/results/misc/export.html">public World Cube Association Rubik’s cube competition</a></p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>
+                        World Cube Association Database Statistics
+                        <a href="https://github.com/yuxuibbs/WCA-Statistics"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <p><strong>Python (Pandas, SciPy, seaborn, matplotlib), Jupyter Notebook, Tableau</strong></p>
+                    <p>Interesting statistics generated from the <a href="https://www.worldcubeassociation.org/results/misc/export.html">WCA database export</a></p>
+                </div>
             </div>
         </div>
 
         <h2>Other Projects</h2>
-        <p>These are the projects with code that cannot be shared publicly due to course restrictions (such as the University of Michigan Engineering Honor Code) and data sensitivity concerns.</p>
-        <div class="project-list">
-            <div class="project">
-                <h3>MLAG registration and scoring program</h3>
-                <p>Application for registration and scoring for the Michigan Leagues of Academic Games State Tournaments</p>
+        <div class="row" id="projects">
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>
+                        Firearm Injury Intent Predictor
+                    </h3>
+                    <p><strong>R (tidyverse)</strong></p>
+                    <p>Trained a decision tree and random forest machine learning model to predict whether or not a firearm injury was most likely intentional or unintentional using data from the 1993 - 2014 Firearm Injury Surveillance Study with over 93% accuracy and over 90% sensitivity</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Kidney segmentation program</h3>
-                <p>Program that takes in CT scans and maps out the kidneys</p>
-            </div>
-            <div class="project">
-                <h3>Stenosis detection program</h3>
-                <p>Program that takes in coronary angiograms and detects stenosis (blood vessel thinning)</p>
-            </div>
-            <div class="project">
-                <h3>Equations tricks finder for Academic Games</h3>
-                <p>Program that finds good Equations tricks</p>
-            </div>
-            <div class="project">
-                <h3>AI that plays a turn-based dungeon exploration game</h3>
-                <p>AI for 183 Siege</p>
-            </div>
-            <div class="project">
-                <h3>0hh1 solver</h3>
-                <p>Enter a valid 0hh1 game board and get the solution for that board</p>
+            <div class="col-lg-4">
+                <div class="project">
+                    <h3>
+                        Random Meme Sender
+                        <a href="https://github.com/yuxuibbs/ArborHacks2-project"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <p><strong>Tropo, JavaScript</strong></p>
+                    <p>Text 734-794-3419 to get a random meme</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <footer class="footer">
-        <hr>
-        <p>Created by Yuxuan Chen &copy; 2018</p>
-        <a href="mailto:yuxuanc@umich.edu?Subject=Website">Email <i class="far fa-envelope"></i></a>
-        <a href="https://github.com/yuxuibbs">GitHub <i class="fab fa-github"></i></a>
-    </footer>
+
+            
+            
+            
+            
+            
+    </div>
+    <div id="insertFooter"></div>
 </body>
 </html>
